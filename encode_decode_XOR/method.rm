@@ -1,0 +1,13 @@
+This is a encrption with XOR Method
+
+first explore the file with editor, and try to find something diff.
+We have some info of the encrptied file (.png), so we can look for some info
+from png file format.
+
+second compare the png file format to the encrptied file, if XOR them,
+we can see a string repeating "5pyxf4m1ly".
+
+third we can assume the string is the key of the XOR encrption,
+so we use the string to decode the file.
+
+The ans is output "FLAG{4nya_l1k3_7h15}".
