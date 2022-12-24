@@ -5,6 +5,9 @@ We have some info of the encrptied file (.png), so we can look for some info
 from png file format.
 
 second compare the png file format to the encrptied file, if XOR them,
+hint: use the PNG-file-chunk-inspector web tool 
+(https://www.nayuki.io/page/png-file-chunk-inspector)
+
 we can see a string repeating "5pyxf4m1ly".
 
 third we can assume the string is the key of the XOR encrption,
