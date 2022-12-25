@@ -1,0 +1,20 @@
+Start a Server with php:
+1.goto the directory : PHPServer
+2.cmd command : php -S [ip]:[port]
+example : php -S localhost:8000
+
+nslookup is a tool to explore dns info
+
+-type=hinfo (host information)
+
+Server: XXX.XXX.XXX.XXX   (DNS Server for ourselves)
+Address:XXX.XXX.XXX.XXX#x (Gateway address)
+
+Non-authoritative answer:
+XXXXX
+Authoritative answers can be found from:
+XXXXX
+
+
+DNSLog Platform is a tool to quick set up a DNS.
+Than you can use a new created DNS for tring to query the target web to respond to the sub DN, than it will show the info with the respond without being ban your own ip for too much queries.
